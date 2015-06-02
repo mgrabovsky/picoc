@@ -5,7 +5,7 @@ void fred()
     printf("test\n");
 }
 
-void main() 
+void main()
 {
     fred();
 }

@@ -30,12 +30,12 @@ void main()
     uint64_t u64 = 0xFEDCBA98FFFF;
 
     char* y = (char*) &x32;
-    
+
     printf("%d<%ld>\n", x8, sizeof(x8));
     printf("%d<%ld>\n", x16, sizeof(x16));
     printf("%d<%ld>\n", x32, sizeof(x32));
     printf("%ld<%ld>\n", x64, sizeof(x64));
-    
+
 
     printf("%u<%ld>\n", u8, sizeof(x8));
     printf("%u<%ld>\n", u16, sizeof(x16));
@@ -43,17 +43,17 @@ void main()
     printf("%lu<%ld>\n", u64, sizeof(x64));
 
     printf("%d\n", *(int32_t*)y);
-    
+
     point pt;
     pt.x = 1;
     pt.y = 2;
-    
+
     point pts[2];
     pts[0] = pt;
     pts[1] = pt;
-    
+
     pt.y = 3;
-    
+
     point* ptp = (point*) &pts[0];
 
     printf("(%d, %d)\n", pt.x, pt.y);

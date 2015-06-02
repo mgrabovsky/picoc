@@ -8,7 +8,7 @@ void fred(int x)
         case 2: printf("2\n"); break;
         case 3: printf("3\n"); return;
     }
-    
+
     printf("out\n");
 }
 
@@ -17,7 +17,7 @@ int main()
     fred(1);
     fred(2);
     fred(3);
-    
+
     return 0;
-}    
+}
 

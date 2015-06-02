@@ -18,7 +18,7 @@ int partition(int left, int right)
     int pivotValue = array[pivotIndex];
     int index = left;
     int i;
- 
+
     swap(pivotIndex, right);
     for(i = left; i < right; i++)
     {
@@ -29,21 +29,21 @@ int partition(int left, int right)
         }
     }
     swap(right, index);
- 
+
     return index;
 }
- 
+
 //Quicksort the array
 void quicksort(int left, int right)
 {
     if(left >= right)
         return;
- 
+
     int index = partition(left, right);
     quicksort(left, index - 1);
     quicksort(index + 1, right);
 }
- 
+
 void main()
 {
     int i;

@@ -12,7 +12,7 @@ void main()
         printf("%d\n", i);
 
     /* this should fail
-    { 
+    {
         int q = 5;
     }
     q = 3.14; // should say error

@@ -144,8 +144,8 @@ int main(int argc, char** argv)
     printf("soko2=\n");
     for (int i = 0; i < 9; i++)
         printf("%s    %c\n", soko2[i], soko2[i][3]);
-    
+
     func_1();
-    
+
     return 0;
 }

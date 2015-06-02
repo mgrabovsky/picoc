@@ -18,7 +18,7 @@ int main()
     for (c=0;c<10;c++)
         printf("c=%d\n",c);
  }
- 
+
  printf("\nTest 2\n");
 
  a = 0; c = 0;

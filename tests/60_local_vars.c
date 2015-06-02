@@ -25,7 +25,7 @@ void foo()
         int j = i+1;
         printf("foo: %d\n", i);
     }
-    
+
     while(1)
     {
         int i = 5;
@@ -54,7 +54,7 @@ void foo()
             printf("foo: %d\n", j);
         }
     }
-    
+
     float j[10];
 }
 
