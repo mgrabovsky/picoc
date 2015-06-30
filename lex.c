@@ -693,8 +693,12 @@ enum LexToken LexGetRawToken(struct ParseState *Parser, struct Value **Value, in
                 if (Parser->Pos != &pc->InteractiveCurrentLine->Tokens[pc->InteractiveCurrentLine->NumBytes-TOKEN_DATA_OFFSET])
                 {
                     /* scan for the line */
-                    for (pc->InteractiveCurrentLine = pc->InteractiveHead; Parser->Pos != &pc->InteractiveCurrentLine->Tokens[pc->InteractiveCurrentLine->NumBytes-TOKEN_DATA_OFFSET]; pc->InteractiveCurrentLine = pc->InteractiveCurrentLine->Next)
-                    { assert(pc->InteractiveCurrentLine->Next != NULL); }
+                    for (pc->InteractiveCurrentLine = pc->InteractiveHead;
+                            Parser->Pos != &pc->InteractiveCurrentLine->Tokens[pc->InteractiveCurrentLine->NumBytes-TOKEN_DATA_OFFSET];
+                            pc->InteractiveCurrentLine = pc->InteractiveCurrentLine->Next)
+                    {
+                        assert(pc->InteractiveCurrentLine->Next != NULL);
+                    }
                 }
 
                 assert(pc->InteractiveCurrentLine != NULL);
