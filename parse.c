@@ -642,7 +642,7 @@ enum ParseResult ParseStatement(struct ParseState *Parser, int CheckTrailingSemi
 #endif
             }
             /* else fallthrough to expression */
-	    /* no break */
+        /* no break */
 
         case TokenAsterisk:
         case TokenAmpersand:
